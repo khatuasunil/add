@@ -1,0 +1,56 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function addnumber()
+		{
+			var i = parseInt(document.getElementById("fno").value);
+			var j = parseInt(document.getElementById("sno").value);
+			var res=i+j;
+			//document.write(res);
+			document.getElementById("susa").value=res;
+			document.getElementById("demo").innerHTML="Addition ="+res;
+		}
+	</script>
+	<style type="text/css">
+		.s{
+			background-color: aqua;
+			height: 300px;
+			width: 400px;
+			text-align: center;
+			border-radius: 10px;
+			transform: translate(600px,200px);
+		}
+		body{
+			background-color: #ff00ff;
+			animation: b 1s infinite;
+		}
+		@keyframes b{
+			0%{
+				background-color: #ff0000;
+			}
+			10%{
+				background-color: #00ff00;
+			}
+			25%{
+				background-color: #0000ff;
+			}
+			50%{
+				background-color: #ffff00;
+			}
+			80%{
+				background-color: #00ffff;
+			}
+			100%{
+				background-color: #ff0000;
+			}
+
+	</style>
+</head>	
+<body>
+	<div class="s"><br/><br/>Entre first number : <input type="text" id="fno" /><br/><br/>
+	Entre second number: <input type="text" id="sno" /><br/><br/>
+	<input type="button" value="add" onclick="addnumber()"/><br/><br/>
+	Addition : <input type="text" id="susa"/>
+	<h1 id="demo"></h1></div>
+</body>
+</html>
